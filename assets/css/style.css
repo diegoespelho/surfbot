@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+  --s0-color: #ffffff;
+  --s1-color: #eff4f9;
+  --s2-color: #bbccdd;
+  --s3-color: #99aabb;
+  --s4-color: #667788;
+  --s5-color: #445566;
+  --s6-color: #17222d;
+  --s6-color: #000000;
+
+  --b1-color: #269BFF;
+  --b2-color: #1188EE;
+  --b3-color: #0467CC;
+
+  --e1-color: #FF3726;
+  --e2-color: #EE2211;
+  --e3-color: #D91504;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+}
+
+.header-bg {
+  background-color: var(--b2-color);
+}
+
+.info {
+  display: block;
+  max-width: 1260px;
+  height: 30px;
+  margin: 0 auto;
+  padding: 0 45px 0;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: var(--s0-color);
+  align-content: center;
+}
+
+.nav-bg {
+  background-color: var(--s6-color);
+}
+
+.nav {
+  display: flex;
+  max-width: 1260px;
+  height: 60px;
+  margin: 0 auto;
+  padding: 0 45px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: var(--s0-color);
+}
+
+.menu li a {
+  position: relative;
+  color: var(--s0-color);
+}
+
+.menu li a::after {
+  position: absolute;
+  top: 50%;
+  right: -23px;
+  transform: translateY(-50%);
+  display: block;
+  content: "";
+  width: 4px;
+  height: 4px;
+  border: 2px solid var(--s0-color);
+  border-radius: 50%;
+}
+
+.menu li:last-child a::after {
+  content: none;
+}
+
+.menu li:last-child {
+  border-bottom: 2px solid var(--e2-color);
+}
+
+.intro-bg {
+  background: url(../img/bg-intro@2x.jpg) center center/cover no-repeat;
+  height: 400px;
+}
+
+.intro-container {
+  max-width: 1260px;
+  height: 400px;
+  display: flex;
+  gap: 40px;
+  margin: 0 auto;
+  padding: 0 45px 0;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.intro-container h1 {
+  font-family: "Alice";
+  font-weight: normal;
+  font-size: 4.5rem;
+  color: var(--s0-color);
+  margin-bottom: 48px;
+}
+
+.form-matricula {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.form-matricula input {
+  width: 285px;
+  padding: 16px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  font-size: 1.125rem;
+  color: var(--s2-color);
+}
+
+.form-matricula button {
+  background-color: var(--e2-color);
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--s0-color);
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  padding: 14px;
+  text-wrap: nowrap;
+}
+
+.form-matricula button:hover {
+  background-color: var(--e3-color);
+}
